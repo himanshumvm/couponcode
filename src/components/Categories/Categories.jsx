@@ -37,12 +37,12 @@ export default function Categories() {
   };
 
   return (
-    <div className="py-8 mx-auto max-w-full">
+    <div className="py-8 mx-auto max -w-full">
       <h2 className="text-4xl font-extrabold text-center mb-8 text-gray-800">😀 Top Categories</h2>
       <div className="w-full mx-auto overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-r from-amber-300 to-indigo-700 p-8">
         <Slider {...settings}>
           {categories.map((category, index) => (
-            <div key={index} className="px-3">
+            <div key={index} className="-3">
               <div className="bg-white text-center text-lg font-semibold py-6 px-4 rounded-xl shadow-md">
                 {category.item}
               </div>
@@ -51,5 +51,5 @@ export default function Categories() {
         </Slider>
       </div>
     </div>
-  );
+  );                                              
 }

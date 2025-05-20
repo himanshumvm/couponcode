@@ -43,7 +43,7 @@ export default function HeroSecond() {
       {slides.map((slide, index) => (
         <div key={index} className="flex justify-center items-center py-10 px-4">
           <div className="bg-white rounded-2xl shadow-xl p-6 w-full max-w-5xl border border-gray-200 flex flex-col items-center">
-            <div className="flex flex-row gap-6 w-full">
+            <div className="flex flex-row  gap-4 w-full h-auto md:h-[300px]   ">
               {/* Left Side: Banner image */}
               <div className="w-2/3 rounded-md overflow-hidden flex items-center justify-center ">
                 <img
@@ -53,7 +53,6 @@ export default function HeroSecond() {
                 />
               </div>
 
-              {/* Right Side: Logo, Title, Button */}
               <div className="w-1/3 flex flex-col items-center justify-center gap-4">
                 <img
                   src={slide.logo}
